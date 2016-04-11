@@ -61,5 +61,15 @@ $ docker run -d -P --name nginx \
     bobsense/nginx-arm64
 ```
 
+## Use your nginx.conf
+
+In order to enable container based on your nginx.conf instead of the default, you can do as follows:
+
+```
+$ docker run -d -P --name nginx \
+    -v xxxx/nginx.conf:/usr/local/nginx/conf/nginx.conf \
+    bobsense/nginx-arm64
+```
+
 # Special Declare
 You are welcomed to make suggestions. I will try my best to make better.
